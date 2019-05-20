@@ -1,0 +1,14 @@
+<div class="container mt-3">
+  <h1>Result</h1>
+  <% if @error.nil? %>
+    <p>The guess was:
+      <%= @word %>
+    </p>
+    <p>The score is:
+      <%= @score %>
+    </p>
+  <% elsif %>
+    <p>Sorry but <strong><%= @word%></strong> <%= @error %></p>
+  <% end %>
+  <%= link_to "Play again", root_path %>
+</div>

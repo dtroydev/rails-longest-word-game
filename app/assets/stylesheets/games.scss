@@ -1,0 +1,28 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$letter-background: #3698DB;
+$letter-boxshadow: #A9A9A9;
+$word-submit-background: #3698DB;
+
+.letter {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  background-color: $letter-background;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 1px 1px 5px $letter-boxshadow;
+}
+
+.wordInput {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.wordSubmit {
+  background-color: $word-submit-background;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
